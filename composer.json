@@ -1,0 +1,44 @@
+{
+    "name": "peibin/laravel-provider-config",
+    "description": "Peibin provider config component for Laravel.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "swoole"
+    ],
+    "authors": [
+        {
+            "name": "Peibin Zhu",
+            "email": "zhupeibin1207@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "peibin/laravel-utils": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "PeibinLaravel\\ProviderConfig\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PeibinLaravelTest\\ProviderConfig\\": "tests/"
+        }
+    },
+    "suggest": {
+        "peibin/laravel-di": "Required to use annotations."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PeibinLaravel\\ProviderConfig\\ConfigServicProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
